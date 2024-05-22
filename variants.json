@@ -1,0 +1,24 @@
+{
+    "opn1lw": {
+        "pathogenic": [
+            "LIAVA",
+            "LIVVA",
+            "LVAVA",
+            "MIAVA",
+            "MVAVA"
+        ],
+        "unknown_significance": [
+            "MVVVA"
+        ]
+    },
+    "opn1mw": {
+        "pathogenic": [
+            "LVAVA",
+            "MIAVA",
+            "MVAVA"
+        ],
+        "unknown_significance": [
+            "MVVVA"
+        ]
+    }
+}
