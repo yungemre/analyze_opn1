@@ -1,5 +1,6 @@
 import argparse
 
+
 def parameters():
     
     parser = argparse.ArgumentParser(description="Analyze paraphase output for pathogenic variants")
@@ -8,9 +9,9 @@ def parameters():
                         help='path to paraphase')
     parser.add_argument('-b', '--bam', 
                         help='bam file (required for paraphase)')
-    parser.add_argument('-s', '--samtools', nargs='?', const='samtools', 
+    parser.add_argument('-s', '--samtools', nargs='?', const='samtools', default='samtools',
                         help='path to samtools (could be required for paraphase)')
-    parser.add_argument('-m', '--minimap2', nargs='?', const='minimap2', 
+    parser.add_argument('-m', '--minimap2', nargs='?', const='minimap2', default='minimap2',
                         help='path to minimap2 (could be required for paraphase)')
     parser.add_argument('-r', '--reference', 
                         help='path to reference genome fasta (e.g. GRCh38, required for paraphase)')
