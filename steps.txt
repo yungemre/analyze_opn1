@@ -1,1 +1,47 @@
+- paraphase for ref 1 long and ref 2 long
+  # Ref 1 Long - HG001 - NA12878
+  paraphase -b /mnt/storage1/projects/research/23014I_1145_ONTpilot_TNAMSE/Sample_23014LRa023L2_01/23014LRa023L2_01.bam \
+          -r /mnt/storage2/users/ahincie1/reference/GRCh38.fa -o /mnt/storage2/users/ahincie1/paraphase/Ref1_Long/all_GRCh38 --samtools /usr/bin/samtools \
+          --minimap2 /mnt/storage2/users/ahincie1/tools/minimap2/minimap2
+  # Ref 2 Long - HG002 - NA24385
+  paraphase -b /mnt/storage1/projects/research/23014I_1145_ONTpilot_TNAMSE/Sample_23014LRa028_01/23014LRa028_01.bam \
+          -r /mnt/storage2/users/ahincie1/reference/GRCh38.fa -o /mnt/storage2/users/ahincie1/paraphase/Ref2_Long/all_GRCh38 --samtools /usr/bin/samtools \
+          --minimap2 /mnt/storage2/users/ahincie1/tools/minimap2/minimap2
 
+- bed file for paraphase regions
+- vcffilter with paraphase regions for ref and goldstandards (normalized and not normalized)
+	- goldstandards without X and Y
+- vcfeval
+
+
+OPN1LW/OPN1MW variants
+	- Short-read sequencing renders reads of 100-400 base pairs (bp) in length, which are too short to differentiate between the highly homologous OPN1LW and OPN1MW gene (Haer-Wigman 22)
+	- Haer-Wigman 22
+		- LIAVA in OPN1LW and MVVVA in OPN1MW (at positions 153, 171, 174, 178 and 180) causal for BED
+		- in OPN1LW: LIAVA, LIVVA, LVAVA, MIAVA and MVAVA pathogenic, MVVVA unknown significance
+		- in OPN1MW: LVAVA, MIAVA and MVAVA pathogenic, MVVVA unknown significance
+		- 
+	
+	- LIAVA (Leu153, Ile171, Ala174, Val178 and Ala180)
+
+programming:
+- argparse
+	- -p --paraphase (path to paraphase)
+	- -b --bam (bam file for paraphase)
+	- -j --jason (createtd by paraphase)
+	- -g --gene (name of gene e.g. opn1lw)
+	- -r --reference (e.g. GRCh38)
+	- -s --samtools (path to samtools)
+	- -m --minimap2 (path to minimap2)
+	- -o --output 
+	- -h --help
+
+TODO:
+- read for pathogenic variants
+- compare with pathogenic variants
+- paraphase subprocess
+
+- smn1
+
+test:
+python -m bachelor -j /mnt/storage2/users/ahincie1/paraphase/Ref1_Long/opn_GRCh38/23014LRa023L2_01.paraphase.json -g opn1lw -o /mnt/storage2/users/ahincie1/bachelor_test
