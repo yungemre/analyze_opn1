@@ -12,6 +12,7 @@
 - vcffilter with paraphase regions for ref and goldstandards (normalized and not normalized)
 	- goldstandards without X and Y
 - vcfeval
+	->paraphase->evals
 
 
 OPN1LW/OPN1MW variants
@@ -20,28 +21,25 @@ OPN1LW/OPN1MW variants
 		- LIAVA in OPN1LW and MVVVA in OPN1MW (at positions 153, 171, 174, 178 and 180) causal for BED
 		- in OPN1LW: LIAVA, LIVVA, LVAVA, MIAVA and MVAVA pathogenic, MVVVA unknown significance
 		- in OPN1MW: LVAVA, MIAVA and MVAVA pathogenic, MVVVA unknown significance
-		- 
+		
+		- OPN1MW: c.607C > T p.(Cys203Arg) -> BCM
 	
 	- LIAVA (Leu153, Ile171, Ala174, Val178 and Ala180)
 
-programming:
-- argparse
-	- -p --paraphase (path to paraphase)
-	- -b --bam (bam file for paraphase)
-	- -j --jason (createtd by paraphase)
-	- -g --gene (name of gene e.g. opn1lw)
-	- -r --reference (e.g. GRCh38)
-	- -s --samtools (path to samtools)
-	- -m --minimap2 (path to minimap2)
-	- -o --output 
-	- -h --help
 
 TODO:
-- read for pathogenic variants
-- compare with pathogenic variants
-- paraphase subprocess
+	- opn1 variants
+	- mail an wissinger
+	- smn1
 
-- smn1
+
+cd repo, git pull origin main, git checkout -b name, git add ., git commit -m "dasdop", git push origin "branch"
 
 test:
-python -m bachelor -j /mnt/storage2/users/ahincie1/paraphase/Ref1_Long/opn_GRCh38/23014LRa023L2_01.paraphase.json -g opn1lw -o /mnt/storage2/users/ahincie1/bachelor_test
+python -m bachelor -j /mnt/storage2/users/ahincie1/bachelor_test/Ref1_Long/paraphase_output/opn1lw.paraphase.json -g opn1lw -o /mnt/storage2/users/ahincie1/bachelor_test/Ref1_Long
+python -m bachelor -p -b /mnt/storage1/projects/research/23014I_1145_ONTpilot_TNAMSE/Sample_23014LRa023L2_01/23014LRa023L2_01.bam -g opn1lw -r /mnt/storage2/users/ahincie1/reference/GRCh38.fa -o /mnt/storage2/users/ahincie1/bachelor_test/Ref1_Long --samtools /usr/bin/samtools --minimap2 /mnt/storage2/users/ahincie1/tools/minimap2/minimap2
+
+
+python -m bachelor -p -b /mnt/storage1/projects/research/23014I_1145_ONTpilot_TNAMSE/Sample_23014LRa028_01/23014LRa028_01.bam -g opn1lw -r /mnt/storage2/users/ahincie1/reference/GRCh38.fa -o /mnt/storage2/users/ahincie1/bachelor_test/Ref2_Long --samtools /usr/bin/samtools --minimap2 /mnt/storage2/users/ahincie1/tools/minimap2/minimap2
+
+python -m bachelor -p -b /mnt/storage2/users/ahincie1/bachelor_test/smn1/HG00733_smn1_realigned.bam -g smn1 -r /mnt/storage2/users/ahincie1/reference/human_GRCh38_no_alt_analysis_set/human_GRCh38_no_alt_analysis_set.fasta -o /mnt/storage2/users/ahincie1/bachelor_test/smn1/paraphase_test_data --samtools /usr/bin/samtools --minimap2 /mnt/storage2/users/ahincie1/tools/minimap2/minimap2
