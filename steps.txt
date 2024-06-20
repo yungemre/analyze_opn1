@@ -1,13 +1,3 @@
-- paraphase for ref 1 long and ref 2 long
-  # Ref 1 Long - HG001 - NA12878
-  paraphase -b /mnt/storage1/projects/research/23014I_1145_ONTpilot_TNAMSE/Sample_23014LRa023L2_01/23014LRa023L2_01.bam \
-          -r /mnt/storage2/users/ahincie1/reference/GRCh38.fa -o /mnt/storage2/users/ahincie1/paraphase/Ref1_Long/all_GRCh38 --samtools /usr/bin/samtools \
-          --minimap2 /mnt/storage2/users/ahincie1/tools/minimap2/minimap2
-  # Ref 2 Long - HG002 - NA24385
-  paraphase -b /mnt/storage1/projects/research/23014I_1145_ONTpilot_TNAMSE/Sample_23014LRa028_01/23014LRa028_01.bam \
-          -r /mnt/storage2/users/ahincie1/reference/GRCh38.fa -o /mnt/storage2/users/ahincie1/paraphase/Ref2_Long/all_GRCh38 --samtools /usr/bin/samtools \
-          --minimap2 /mnt/storage2/users/ahincie1/tools/minimap2/minimap2
-
 - bed file for paraphase regions
 - vcffilter with paraphase regions for ref and goldstandards (normalized and not normalized)
 	- goldstandards without X and Y
@@ -20,8 +10,8 @@ OPN1LW/OPN1MW variants
 	- Haer-Wigman 22
 		- regions in Exon 3: (c.453G > A p.(Arg151Arg), c.457C > A p.(Leu153Met), c.465G > A p.(Val155Val), c.[511G > A;513G > T] p.(Val171Ile), c.521C > T p.(Ala174Val), c.532 A > G p.(Ile178Val), c.538G > T p.(Ser180Ala))
 			- LIAVA in OPN1LW and MVVVA in OPN1MW (at positions 153, 171, 174, 178 and 180) causal for BED
-			- in OPN1LW: LIAVA, LIVVA, LVAVA, MIAVA and MVAVA pathogenic, MVVVA unknown significance
-			- in OPN1MW: LVAVA, MIAVA and MVAVA pathogenic, MVVVA unknown significance
+			- in OPN1LW: LIAVA, LIVVA, LVAVA, MIAVA and MVAVA pathogenic
+			- in OPN1MW: LVAVA, MIAVA and MVAVA pathogenic
 		
 		- OPN1MW: c.607C > T p.(Cys203Arg) -> BCM
 			607. position of the coding region: C replaced by T, 
@@ -30,13 +20,10 @@ OPN1LW/OPN1MW variants
 
 
 TODO:
-	- opn1 variants
-	- mail an wissinger
-
-	- paraphase paper
-	- paraphase: opn1lwphaser
+	- papers for variants
 
 	- HOW TO FIND: LCR (BCM)
+
 	- smn1
 
 
