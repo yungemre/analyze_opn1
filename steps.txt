@@ -20,6 +20,7 @@ OPN1LW/OPN1MW variants
 
 
 TODO:
+	- gene conersions: mechanisms, evolution and human disease (2012)
 	- papers for variants
 
 	- HOW TO FIND: LCR (BCM)
