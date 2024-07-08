@@ -40,6 +40,10 @@ python -m bachelor -p -b /mnt/storage1/projects/research/23014I_1145_ONTpilot_TN
 python -m bachelor -p -b /mnt/storage2/users/ahincie1/bachelor_test/smn1/HG00733_smn1_realigned.bam -g smn1 -r /mnt/storage2/users/ahincie1/reference/human_GRCh38_no_alt_analysis_set/human_GRCh38_no_alt_analysis_set.fasta -o /mnt/storage2/users/ahincie1/bachelor_test/smn1/paraphase_test_data --samtools /usr/bin/samtools --minimap2 /mnt/storage2/users/ahincie1/tools/minimap2/minimap2
 
 
+/mnt/
+
+
+
 Thesis:
 - compare LR with SR: advantages, vcfeval
 
