@@ -50,3 +50,5 @@ Thesis:
 - Methods: regions from paraphrase, paraphase, vcffilter, vcfeval
 
 - why LR for opn1: opsin paper introduction
+
+- mit clinvar snvs gefunden
