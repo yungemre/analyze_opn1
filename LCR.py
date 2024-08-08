@@ -4,8 +4,8 @@ from pysam import VariantFile
 def find_LCR(file, table):
     # LCR coordinates
     chromosome = 'X'
-    start_position = 0
-    end_position = 0
+    start_position = 154118184
+    end_position = 154191311
 
     vcf_file = VariantFile(file)
 
