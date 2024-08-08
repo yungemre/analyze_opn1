@@ -1,9 +1,9 @@
 import subprocess
-import json
-from .opn1lw import opn1lw
 from .analyze_paraphase import analyze_paraphase_output
 from .table import table_header, write_table
 from .snv import find_snv
+from .combinations import analyze_combinations
+from .LCR import find_LCR
 
 
 def run_paraphase(paraphase, bam, reference, samtools, minimap2, output):
@@ -44,17 +44,25 @@ def analyze(json_file, clair_file, sniffles_file, output):
     :param output: Output directory
     """
 
+    table = table_header()
+    # haer_wigman(["opn1lw_LIAVA", "opn1lw_LIVVA"], table)
+
+
     with open(f"{output}/analysis_summary.txt", 'w') as out_file:
 
         haplotype_list = analyze_paraphase_output(json_file, out_file)
 
-        table = table_header() # table to store possbily pathogenic variants
+        table = table_header()  # table to store possibly pathogenic variants
 
-        table = find_snv(clair_file, table) # add possibly pathogenic SNV's to the table
+        table = find_LCR(sniffles_file, table)
+
+        table = find_snv(clair_file, table)  # add possibly pathogenic SNV's to the table
+
+        # analyze_combinations(haplotype_list, table)
+
+        table = analyze_combinations(["opn1lw_LIAVA", "opn1lw_LIVVA", "opn1mw_MVVVA"], table)
 
         write_table(out_file, table)
-
-
 
 
 def read_parameters(args):
