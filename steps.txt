@@ -39,6 +39,7 @@ python -m bachelor -p -b /mnt/storage1/projects/research/23014I_1145_ONTpilot_TN
 
 python -m bachelor -p -b /mnt/storage2/users/ahincie1/bachelor_test/smn1/HG00733_smn1_realigned.bam -g smn1 -r /mnt/storage2/users/ahincie1/reference/human_GRCh38_no_alt_analysis_set/human_GRCh38_no_alt_analysis_set.fasta -o /mnt/storage2/users/ahincie1/bachelor_test/smn1/paraphase_test_data --samtools /usr/bin/samtools --minimap2 /mnt/storage2/users/ahincie1/tools/minimap2/minimap2
 
+python -m analyze_opn1 -j analyze_opn1/test_files/test.json -c analyze_opn1/test_files/sample.compressed.vcf.gz -f analyze_opn1/test_files/sample.compressed.vcf.gz -i test2 -o analyze_opn1/test_files/test_output
 
 /mnt/
 

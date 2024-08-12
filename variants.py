@@ -3,7 +3,7 @@
 SNVs = [
     {
         "variant": "opn1lw: c.607T>C p.(Cys203Arg)",
-        "chromosome": "X",
+        "chromosome": "chrX",
         "position": 154154602,
         "ref_base": "T",
         "alt_base": "C",
@@ -15,7 +15,7 @@ SNVs = [
     },
     {
         "variant": "opn1lw: c.347C>G p.(Ser116Cys)",
-        "chromosome": "X",
+        "chromosome": "chrX",
         "position": 154150890,
         "ref_base": "C",
         "alt_base": "G",
@@ -26,7 +26,7 @@ SNVs = [
     },
     {
         "variant": "opn1lw: c.1013G>T p.(Gly338Val)",
-        "chromosome": "X",
+        "chromosome": "chrX",
         "position": 154158844,
         "ref_base": "G",
         "alt_base": "T",
@@ -37,7 +37,7 @@ SNVs = [
     },
     {
         "variant": "opn1mw: c.607T>C p.(Cys203Arg)",
-        "chromosome": "X",
+        "chromosome": "chrX",
         "position": 154191716,
         "ref_base": "T",
         "alt_base": "C",
@@ -48,7 +48,7 @@ SNVs = [
     },
     {
         "variant": "opn1mw: c.38G>A p.(Arg13His)",
-        "chromosome": "X",
+        "chromosome": "chrX",
         "position": 154182715,
         "ref_base": "G",
         "alt_base": "A",
@@ -59,7 +59,7 @@ SNVs = [
     },
     {
         "variant": "opn1mw: c.659T>C p.(Met220Thr)",
-        "chromosome": "X",
+        "chromosome": "chrX",
         "position": 154191768,
         "ref_base": "T",
         "alt_base": "C",
