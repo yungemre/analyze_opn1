@@ -1,0 +1,26 @@
+test2 analysis summary
+
+Total copy number: 6
+opn1lw copy number: 2
+opn1mw copy number: 4
+
+Annotated haplotypes:
+	 opn1lw_LVAIS 
+	 opn1lw_LVAIA 
+	 opn1mw_LVAIA 
+	 opn1mw_MVAIA 
+	 opn1mw_MVAIA 
+	 opn1mw_MVAIA 
+
+Possible pathogenic variants:
+----------------------------------------------------------------------------------------
+|            Variant             |       Haer-Wigman        |          Neitz           |
+----------------------------------------------------------------------------------------
+|                                | Classification | Disease | Classification | Disease |
+----------------------------------------------------------------------------------------
+| opn1lw: c.607T>C p.(Cys203Arg) |   pathogenic   |   BCM   |       /        |    /    |
+----------------------------------------------------------------------------------------
+| opn1lw: c.347C>G p.(Ser116Cys) |  missense VUS  |    /    |       /        |    /    |
+----------------------------------------------------------------------------------------
+| opn1mw: c.607T>C p.(Cys203Arg) |   pathogenic   |   BCM   |       /        |    /    |
+----------------------------------------------------------------------------------------

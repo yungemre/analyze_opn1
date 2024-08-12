@@ -1,0 +1,25 @@
+{
+    "test2": [
+        {
+            "variant": "opn1lw: c.607T>C p.(Cys203Arg)",
+            "Haer_Wigman_classification": "pathogenic",
+            "Haer_Wigman_disease": "BCM",
+            "Neitz_classification": "/",
+            "Neitz_disease": "/"
+        },
+        {
+            "variant": "opn1lw: c.347C>G p.(Ser116Cys)",
+            "Haer_Wigman_classification": "missense VUS",
+            "Haer_Wigman_disease": "/",
+            "Neitz_classification": "/",
+            "Neitz_disease": "/"
+        },
+        {
+            "variant": "opn1mw: c.607T>C p.(Cys203Arg)",
+            "Haer_Wigman_classification": "pathogenic",
+            "Haer_Wigman_disease": "BCM",
+            "Neitz_classification": "/",
+            "Neitz_disease": "/"
+        }
+    ]
+}

@@ -23,6 +23,8 @@ def parameters():
                         help='path to minimap2 (could be required for paraphase)')
     parser.add_argument('-r', '--reference',
                         help='path to reference genome fasta (GRCh38, required for paraphase)')
+    parser.add_argument('-i', '--id', required=True,
+                        help='sample id')
     parser.add_argument('-o', '--output', required=True,
                         help='output directory')
 
