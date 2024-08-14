@@ -19,11 +19,11 @@ def write_table(out_file, table):
 
     :param out_file: txt file for analysis summary
     :param table: table with variants
-    :return:
     """
 
     out_file.write("Possibly pathogenic variants:\n")
     
+    # if no possibly pathogenic variants were found
     if len(table) <= 2:
         out_file.write("None")
         print("finished")

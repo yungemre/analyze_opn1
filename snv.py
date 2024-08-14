@@ -18,11 +18,6 @@ def find_snv(file, table):
     :return: table with (new) variants
     """
 
-    # file = "/mnt/storage3b/projects/research/23014I_1145_ONTpilot_TNAMSE/Sample_23014LRa023L2_01/clair_temp
-    # /full_alignment.vcf.gz"
-
-    # file = "test_files/sample.compressed.vcf.gz"
-
     vcf = VariantFile(file)
 
     for variant in SNVs:
