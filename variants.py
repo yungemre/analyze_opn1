@@ -98,8 +98,8 @@ Haer_Wigman_combinations = [
     },
     {
         "haplotype": "opn1lw_MVVVA",
-        "Haer-Wigman_classification": "pathogenic or VUS",
-        "Haer-Wigman_disease": "BED"
+        "Haer-Wigman_classification": "VUS",
+        "Haer-Wigman_disease": "/"
     },
     {
         "haplotype": "opn1mw_LVAVA",
@@ -119,6 +119,6 @@ Haer_Wigman_combinations = [
     {
         "haplotype": "opn1mw_MVVVA",
         "Haer-Wigman_classification": "VUS",
-        "Haer-Wigman_disease": "BED"
+        "Haer-Wigman_disease": "/"
     }
 ]
