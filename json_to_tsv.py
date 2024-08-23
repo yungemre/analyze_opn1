@@ -7,7 +7,8 @@ def process_json_files(input_folder, output_file):
     
     with open(output_file, 'w', newline='') as tsvfile:
         writer = csv.writer(tsvfile, delimiter='\t')
-        writer.writerow(["Sample ID", "Possibly Pathogenic Variant", "Haer-Wigman Classification", "Haer-Wigman Disease", "Neitz Classification", "Neitz Disease"])
+        writer.writerow(["Sample ID", "Sample Sex", "Possibly Pathogenic Variant", "Haer-Wigman Classification",
+                         "Haer-Wigman Disease", "Neitz Classification", "Neitz Disease"])
               
         for filename in os.listdir(input_folder):
             if filename.endswith(".json"):
@@ -25,6 +26,7 @@ def process_json_files(input_folder, output_file):
                             for entry in entries:
                                 writer.writerow([
                                     sample_id,
+                                    entry.get("sample_sex", ""),
                                     entry.get("variant", ""),
                                     entry.get("Haer_Wigman_classification", ""),
                                     entry.get("Haer_Wigman_disease", ""),
