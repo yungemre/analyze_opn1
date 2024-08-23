@@ -1,6 +1,7 @@
 import subprocess
 import os
 import json
+import sys
 from .analyze_paraphase import analyze_paraphase_output
 from .table import table_header, write_table
 from .snv import find_snv
@@ -35,7 +36,7 @@ def run_paraphase(paraphase, bam, reference, samtools, minimap2, sample_id, outp
 
         print("Paraphase ran successfully.")
     except subprocess.CalledProcessError as e:
-        print("Paraphase error: {e}")
+        sys.exit(f"Paraphase error: {e}")
 
     # path to json file
     json_output = f"{out_folder}/{sample_id}.paraphase.json"
@@ -52,6 +53,8 @@ def get_sample_sex(json_data):
     """
 
     sample_sex = json_data['opn1lw']['sample_sex']
+    
+    return sample_sex
 
 
 
