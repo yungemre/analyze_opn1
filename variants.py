@@ -97,11 +97,6 @@ Haer_Wigman_combinations = [
         "Haer-Wigman_disease": "BED"
     },
     {
-        "haplotype": "opn1lw_MVVVA",
-        "Haer-Wigman_classification": "VUS",
-        "Haer-Wigman_disease": "/"
-    },
-    {
         "haplotype": "opn1mw_LVAVA",
         "Haer-Wigman_classification": "pathogenic",
         "Haer-Wigman_disease": "BED or Cone Dystrophy"
@@ -115,10 +110,5 @@ Haer_Wigman_combinations = [
         "haplotype": "opn1mw_MVAVA",
         "Haer-Wigman_classification": "pathogenic",
         "Haer-Wigman_disease": "BED"
-    },
-    {
-        "haplotype": "opn1mw_MVVVA",
-        "Haer-Wigman_classification": "VUS",
-        "Haer-Wigman_disease": "/"
     }
 ]
