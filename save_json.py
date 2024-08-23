@@ -1,6 +1,6 @@
 import json
 
-def save_as_json(table, sample_id, output):
+def save_as_json(table, sample_id, sample_sex, output):
 
     variants_to_save = table[2:]
 
@@ -8,6 +8,7 @@ def save_as_json(table, sample_id, output):
 
     for row in variants_to_save:
         variant = {
+            "sample_sex": sample_sex,
             "variant": row[0],
             "Haer_Wigman_classification": row[1],
             "Haer_Wigman_disease": row[2],
