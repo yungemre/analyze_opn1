@@ -20,7 +20,7 @@ def process_json_files(input_folder, output_file):
                     for sample_id, entries in data.items():
 					
                         if not entries: 
-                            writer.writerow([sample_id, "None", "", "", "", ""])
+                            writer.writerow([sample_id, "", "None", "", "", "", ""])
 							
                         else:
                             for entry in entries:
