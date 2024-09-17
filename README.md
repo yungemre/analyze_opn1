@@ -19,3 +19,11 @@ python -m analyze_opn1 -j paraphase.json \
 -c SNV.vcf.gz -f structurals_variants.vcf.gz \
 -i sample_id -o output_directory
 ```
+
+## Parameters
+
+| Parameter       | Requirement       |
+|:------------||:-----------:|
+| -p, --paraphase | required to run paraphase |
+| -j, --json   | json paraphase outpu if paraphase already was executed |
+| -b, --bam    | required to run paraphase |
