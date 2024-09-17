@@ -117,8 +117,7 @@ def analyze_combinations(haplotype_list, table):
 
 
     # list of pathogenic haplotypes (Haer-Wigman) that are not mentioned in Neit et al.
-    hw_haplotypes = ["opn1lw_LIVVA", "opn1lw_MVAVA", "opn1lw_MVVVA", "opn1mw_MIAVA", "opn1mw_MVAVA",
-                     "opn1mw_MVVVA"]
+    hw_haplotypes = ["opn1lw_LIVVA", "opn1lw_MVAVA", "opn1mw_MIAVA", "opn1mw_MVAVA"]
 
     for haplotype in haplotype_list:
 
