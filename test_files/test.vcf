@@ -1,8 +1,0 @@
-##fileformat=VCFv4.2
-##source=TestSource
-#CHROM  POS         ID      REF     ALT     QUAL    FILTER  INFO
-chr1    12345       .       G       A       29.5    PASS    .
-chr1    54321      rs123    T       C       50.0    PASS    .
-chr2    13579       .       A       G       10.0    q10     .
-chr3    24680      rs456    C       T       99.9    PASS    .
-chrX    154154602   .       T       C
