@@ -1,5 +1,5 @@
 # Analyze the OPN1LW/OPN1MW gene cluster
-Analysis of genetic variants in duplicate genes using long Nanopore reads
+Detection of pathogenic variants in the OPN1LW/OPN1MW gene cluster using long reads.
 
 # Usage
 
