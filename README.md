@@ -22,8 +22,15 @@ python -m analyze_opn1 -j paraphase.json \
 
 ## Parameters
 
-| Parameter | Requirement|
-|:------------|:-----------:|
+| Parameter | RDescription|
+|:------------|:-----------|
 | -p, --paraphase | required to run paraphase |
-| -j, --json   | json paraphase outpu if paraphase already was executed |
+| -j, --json   | json paraphase output if paraphase already was executed |
 | -b, --bam    | required to run paraphase |
+| -c, --clair | required SNV vcf file |
+| -f, --sniffles | required structural variant file |
+| -i, --id | required sample id |
+| -r, --reference | required to run paraphase (fasta) |
+| -o, --output | required path to output directory |
+| -s, --samtools | optional path to samtools (for paraphase) |
+| -m, --minimap2 | optional path to minimap2 (for paraphase) |
