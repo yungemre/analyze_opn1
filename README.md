@@ -22,7 +22,7 @@ python -m analyze_opn1 -j paraphase.json \
 
 ## Parameters
 
-| Parameter | RDescription|
+| Parameter | Description|
 |:------------|:-----------|
 | -p, --paraphase | required to run paraphase |
 | -j, --json   | json paraphase output if paraphase already was executed |
